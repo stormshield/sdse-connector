@@ -24,21 +24,11 @@ Pour utiliser le script ```SecuredFolderWithAcl``` vous aurez besoin des modules
 *	Microsoft.PowerShell.LocalAccounts
 *	addsadministration
 
-
-## PowerShell
-Le script est à exécuter au démarrage de la session Windows de l’utilisateur. Pour ce faire, une possibilité est de créer un raccourci vers l’exécutable PowerShell dans le dossier ```Startup``` de l’utilisateur.
+## .NET
+L’exécutable est à lancer au démarrage de la session Windows de l’utilisateur. Pour ce faire, une possibilité est de créer un raccourci vers l’exécutable dans le dossier ```Startup``` de l’utilisateur.
  ```C:\Users\User>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup```
 
-Exécutable PowerShell :
-```C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe```
-
-Arguments à passer à l’exécutable PowerShell :
-```-WindowStyle Hidden <chemin du script PS1>```
-
-Pour modifier le dossier à sécuriser, éditer le script PS1 et modifier la variable ```$securedFolder``` sur la première ligne du script.
+Pour modifier le dossier à sécuriser, éditer le fichier d’extension ```SDConnectorUseCaseTeamRuleCreator.exe.config``` à côté de l’exécutable et modifier la valeur de la clé ```SecuredFolder``` (laisser vide pour retrouver le comportement par défaut).
 
 ## Rapport
-Les deux implémentations informent l’utilisateur sur ce qu’il s’est passé par une boite de dialogue.
- 
-Chaque message s’affiche si l’action a été réalisée.
-En cas d’erreur, une boite de dialogue similaire est affichée, contenant la description de l’erreur.
+L’utilisateur est informé du résultat via une boite de dialogue. Chaque message s’affiche si l’action a été réalisée. En cas d’erreur, une boite de dialogue similaire est affichée, contenant la description de l’erreur.
