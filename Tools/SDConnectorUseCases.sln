@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDConnectorUseCaseCRM", "SDConnectorUseCaseCRM\SDConnectorUseCaseCRM.csproj", "{DC10997A-3428-48D2-874A-524A33305EBF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BC6EC8FC-6914-47EE-AD81-5911E6ACDC4C} = {BC6EC8FC-6914-47EE-AD81-5911E6ACDC4C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDConnectorUseCaseEngine", "SDConnectorUseCaseEngine\SDConnectorUseCaseEngine.csproj", "{BC6EC8FC-6914-47EE-AD81-5911E6ACDC4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDConnectorUseCaseAddIn", "SDConnectorUseCaseAddIn\SDConnectorUseCaseAddIn.csproj", "{992615B5-5926-4118-A618-457406A548B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDConnectorUseCaseNewEMail", "SDConnectorUseCaseNewEMail\SDConnectorUseCaseNewEMail.csproj", "{8E0F8108-7D50-4D6E-A9BF-366F67E8CA06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDConnectorUseCaseMonitor", "SDConnectorUseCaseMonitor\SDConnectorUseCaseMonitor.csproj", "{55F9C795-73CD-46E1-AFCF-E3CF5DFE7582}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDConnectorUseCaseMonitorAIP", "SDConnectorUseCaseMonitorAIP\SDConnectorUseCaseMonitorAIP.csproj", "{1A59A238-2692-490B-AE94-8E056FE063D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDConnectorUseCaseTeamRuleCreator", "SDConnectorUseCaseTeamRuleCreator\SDConnectorUseCaseTeamRuleCreator.csproj", "{DD4B21F0-E26B-494C-847B-B3A137BBC75E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BC6EC8FC-6914-47EE-AD81-5911E6ACDC4C} = {BC6EC8FC-6914-47EE-AD81-5911E6ACDC4C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC10997A-3428-48D2-874A-524A33305EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC10997A-3428-48D2-874A-524A33305EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC6EC8FC-6914-47EE-AD81-5911E6ACDC4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC6EC8FC-6914-47EE-AD81-5911E6ACDC4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC6EC8FC-6914-47EE-AD81-5911E6ACDC4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC6EC8FC-6914-47EE-AD81-5911E6ACDC4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{992615B5-5926-4118-A618-457406A548B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{992615B5-5926-4118-A618-457406A548B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E0F8108-7D50-4D6E-A9BF-366F67E8CA06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E0F8108-7D50-4D6E-A9BF-366F67E8CA06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E0F8108-7D50-4D6E-A9BF-366F67E8CA06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E0F8108-7D50-4D6E-A9BF-366F67E8CA06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F9C795-73CD-46E1-AFCF-E3CF5DFE7582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F9C795-73CD-46E1-AFCF-E3CF5DFE7582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F9C795-73CD-46E1-AFCF-E3CF5DFE7582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F9C795-73CD-46E1-AFCF-E3CF5DFE7582}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A59A238-2692-490B-AE94-8E056FE063D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A59A238-2692-490B-AE94-8E056FE063D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A59A238-2692-490B-AE94-8E056FE063D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A59A238-2692-490B-AE94-8E056FE063D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD4B21F0-E26B-494C-847B-B3A137BBC75E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD4B21F0-E26B-494C-847B-B3A137BBC75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD4B21F0-E26B-494C-847B-B3A137BBC75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD4B21F0-E26B-494C-847B-B3A137BBC75E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
