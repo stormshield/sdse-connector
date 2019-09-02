@@ -34,7 +34,7 @@ Microsoft.Office.Tools.Outlook.v4.0.Utilities
 
 
 ## SDConnectorUseCaseCRM
-Ce kit permet de crée un mail contenant des pièces jointe chiffrés.
+Ce kit permet de créer un mail contenant des pièces jointes chiffrés.
 
 ### Dépendence
 ```
@@ -83,7 +83,7 @@ Microsoft.WSMan.Management.Activities
 ```
 
 ## SDConnectorUseCaseNewEMail
-Ce kit permet d'envoyer des mail signé/chiffré.
+Ce kit permet d'envoyer des mail signés/chiffrés.
 
 ### Dépendence
 ```
@@ -100,7 +100,7 @@ System.Xml
 ```
 
 ## SDConnectorUseCaseTeamRuleCreator
-Ce kit permet de créer des règles Team basé sur les ACL.
+Ce kit permet de créer des règles Team basées sur les ACL.
 
 ### Dépendence
 ```
