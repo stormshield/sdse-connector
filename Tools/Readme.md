@@ -6,8 +6,10 @@ Les kits de démonstration sont fournis à titre d'exemple sous forme de solutio
 ## Prérequis
 Pour utiliser ces kits il est nécessaire de disposer d'une licence Connector valide ainsi que d'un compte SDSE connecté.
 
+## Kit de démonstration
+
 ### SDConnectorUseCaseAddIn
-Ce kit permet de chiffrer une pièce jointe lors de l'envoi d'un mail
+Ce kit permet de chiffrer une pièce jointe lors de l'envoi d'un mail.
 
 ### SDConnectorUseCaseCRM
 Ce kit permet de crée un mail contenant des pièces jointe chiffrés.
