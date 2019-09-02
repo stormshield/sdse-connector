@@ -1,34 +1,25 @@
 # Généralités
 
 ## Introduction
-Ce document décrit comment utiliser le kit de démonstration du module Stormshield Data Connector.
+Les kits de démonstration sont fournis à titre d'exemple sous forme de solution Visual Studio 2017, l'utilisation est la modification est libre, de ce fait Stormshield n'assurera aucun support en cas de mauvais fonctionnement.
 
-## Scénario
-Pour ce kit, on imagine un parc de machines où l’administrateur souhaite qu’un dossier bien particulier soit en permanence chiffré pour les utilisateurs, comme une sorte de coffre-fort.
-Une fois un utilisateur connecté à sa session Windows, on souhaite:
+## Prérequis
+Pour utiliser ces kits il est nécessaire de disposer d'une licence Connector valide ainsi que d'un compte SDSE connecté.
 
-1.	Connecter l’utilisateur à son compte Stormshield Data Security (en mode interactif);
-2.	S’assurer qu’un dossier particulier est sécurisé avec le module Team (et le créer si besoin) ;
-3.	Informer l’utilisateur sur ce qu’il s’est passé.
+### SDConnectorUseCaseAddIn
+Ce kit permet de chiffrer une pièce jointe lors de l'envoi d'un mail
 
-Le dossier doit être systématiquement sécurisé par une règle Team et les fichiers chiffrés.
+### SDConnectorUseCaseCRM
+Ce kit permet de crée un mail contenant des pièces jointe chiffrés.
 
-#	Implémentation
-Le scénario décrit plus haut est implémenté à l’identique pour les deux modes d’utilisation du module Connector, à savoir PowerShell et .NET.
-Dans les deux implémentations, le dossier configuré est un dossier nommé ```Secured``` sur le bureau de l’utilisateur.
+### SDConnectorUseCaseMonitor
+Ce kit permet de monitorer un dossier afin de chiffrer son contenu via le module File.
 
-##	Dépendance
-Pour utiliser le script ```SecuredFolderWithAcl``` vous aurez besoin des modules Powershell suivant:
+### SDConnectorUseCaseMonitorAIP
+Ce kit permet de monitorer un dossier afin de chiffrer son contenu via le module File en fonction de d'une classification AIP.
 
-*	Microsoft.PowerShell.Security
-*	Microsoft.PowerShell.LocalAccounts
-*	addsadministration
+### SDConnectorUseCaseNewEMail
+Ce kit permet d'envoyer des mail signé/chiffré.
 
-## .NET
-L’exécutable est à lancer au démarrage de la session Windows de l’utilisateur. Pour ce faire, une possibilité est de créer un raccourci vers l’exécutable dans le dossier ```Startup``` de l’utilisateur.
- ```C:\Users\User>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup```
-
-Pour modifier le dossier à sécuriser, éditer le fichier d’extension ```SDConnectorUseCaseTeamRuleCreator.exe.config``` à côté de l’exécutable et modifier la valeur de la clé ```SecuredFolder``` (laisser vide pour retrouver le comportement par défaut).
-
-## Rapport
-L’utilisateur est informé du résultat via une boite de dialogue. Chaque message s’affiche si l’action a été réalisée. En cas d’erreur, une boite de dialogue similaire est affichée, contenant la description de l’erreur.
+### SDConnectorUseCaseTeamRuleCreator
+Ce kit permet de créer des règles Team basé sur les ACL.
